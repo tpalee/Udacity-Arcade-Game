@@ -1,6 +1,25 @@
-frontend-nanodegree-arcade-game
-===============================
-
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+<h1> Udacity Arcade Game</h1>
+<br>
+<h2>Installation / starting the game</h2>
+<OL>
+  <li>Download this repository</li>
+  <li>Unzip the downloaded file</li>
+  <li>Open the unzipped folder and navigate to index.html</li>
+  <li>run index.html in your browser</li>
+</OL>
+<br>
+<h2>Playing the game</h2>
+<UL>
+<strong>Traveling through space is dangerous...</strong><br>
+Control the alien spaceship with your arrow-keys on your keyboard.<br>
+The goal of the game is to travel through space from one platform to the other,<br>
+trying to avoid the meteors and enemy-rockets.<br>
+When the player has reached the platform 5 times, victory is achieved.
+ </UL>
+<br> 
+ <h3>Some resources I used working on this project:</h3>
+<ul>
+ <li>stack-overflow</li>
+ <li>W3-schools</li>
+ <li>Udacity-forum</li> 
+</ul>
