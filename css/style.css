@@ -1,0 +1,71 @@
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	color: white;
+	font-family: Righteous;
+	font-size: 1.5em;
+}
+
+div {
+	width: 505px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.top {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#winner {
+	display: none;
+	width: 500px;
+	position: absolute;
+	margin-left: -250px;
+	left: 50%;
+	z-index: 2;
+}
+
+#alienwin {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#gamename {
+	display: block;
+	padding-top: 15px;
+}
+
+#spacefrogger {
+	width: 505px;
+}
+
+#counter {
+	background-color: black;
+	width: 505px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+#count {
+	color: yellow;
+}
+COPY TO CLIPBOARD	 SELECT ALL
