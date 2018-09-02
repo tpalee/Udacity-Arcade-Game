@@ -11,7 +11,7 @@ class Enemy {
     if(this.x>605){
       function randomX() {
         return Math.random() * 200;
-        }
+      }
       this.x=-101-randomX();
     }
     if((player.x+18<this.x+90)&&
@@ -20,7 +20,7 @@ class Enemy {
       (player.y+60>this.y)){
         setTimeout(function(){
           player.sprite = 'images/fly.png'
-          }, 600);
+        }, 600);
         player.x=202;
         player.y=400;
         player.sprite = 'images/hit.png';
@@ -71,7 +71,7 @@ class Player{
   }
 
   handleInput(key){
-    if(key=='left'){
+    if(key=='left'&& this.x>0){
       this.x-=101;
     }
     if(key=='right'&& this.x<350){
@@ -84,8 +84,9 @@ class Player{
       this.y+=83;
     }
     if(this.y<=0){
+      var that=this;
       setTimeout(function(){
-        player.sprite = 'images/fly.png'
+      that.sprite = 'images/fly.png'
       }, 2000);
       this.x=202;
       this.y=400;
@@ -99,31 +100,35 @@ class Player{
         };
     }
   }
+
+
 }//end class Player
 
 
 // Instantiate Enemies and Player.
 // All Enemies are placed in an array called 'allEnemies'.
 // var player = the player object.
-var allEnemies=[];
+var allEnemies=[
+  new Meteor(-100,225,100),
+  new Rocket(-100,140,160),
+  new Meteor(-390,55,130),
+  new Rocket(-100,310,200),
+  new Meteor(-690,55,80),
+  new Meteor(-100,140,140)
+];
+
 var player=new Player(202,400);
-var enemy1=new Meteor(-100,225,100)
-var enemy2=new Rocket(-100,140,160)
-var enemy3=new Meteor(-390,55,130)
-var enemy4=new Rocket(-100,310,200)
-var enemy5=new Meteor(-690,55,80)
-var enemy6=new Meteor(-100,140,140)
-allEnemies.push(enemy1, enemy2, enemy3, enemy4, enemy5, enemy6);
+
 
 
 //class Sound
 class Sound{
     constructor(src){
-      this.sound = document.createElement("audio");
+      this.sound = document.createElement('audio');
       this.sound.src = src;
-      this.sound.setAttribute("preload", "auto");
-      this.sound.setAttribute("controls", "none");
-      this.sound.style.display = "none";
+      this.sound.setAttribute('preload', 'auto');
+      this.sound.setAttribute('controls', 'none');
+      this.sound.style.display = 'none';
       document.body.appendChild(this.sound);
       this.play = function() {
         this.sound.play();
@@ -159,6 +164,7 @@ function rePlay(){
   counter=0;
   count.innerHTML = counter;
 };
+
 
 //declaration of the winner-"pop-up" variables and Event Listener(s)
 //declaration of the counter variables.
