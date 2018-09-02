@@ -8,7 +8,7 @@
   - Open the unzipped folder and navigate to index.html
   - run index.html in your browser
   
-  or click on this link: https://tpalee.github.io/Udacity-Arcade-Game/
+  or click this link: https://tpalee.github.io/Udacity-Arcade-Game/
 
 
 ## Playing the game
